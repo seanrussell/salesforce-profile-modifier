@@ -6,6 +6,22 @@
 	"engines": {
 		"vscode": "^1.56.0"
 	},
+	"icon": "images/logo.png",
+	"keywords": [
+		"sfdx",
+		"salesforcedx",
+		"salesforce",
+		"Apex",
+		"Visualforce",
+		"Object",
+		"Field",
+		"profile",
+		"metadata"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/seanrussell/salesforce-profile-modifier.git"
+	  },
 	"categories": [
 		"Other"
 	],

@@ -1,6 +1,6 @@
 # Salesforce Profile Modifier Extension 
 
-[![Logo](./images/logo.png)](https://marketplace.visualstudio.com/items?itemName=MohithShrivastava.dx-code-companion)
+[![Logo](./images/logo.png)](https://marketplace.visualstudio.com/items?itemName=SeanRussell.salesforce-profile-modifier)
 
 **Note that this is not official from Salesforce. I created this extension to help my own development workflow for more easily modifying salesforce profile metadata files.**
 

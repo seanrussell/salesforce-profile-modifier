@@ -39,7 +39,7 @@
     let folders = new Map();
     let selectedProfiles: any = [];
     let lastState = tsvscode.getState();
-    console.log('LAST STATE: ', lastState);
+    
     if (lastState && !lastState.isLoading) {
         isLoading = lastState.isLoading;
         tsvscode.postMessage({

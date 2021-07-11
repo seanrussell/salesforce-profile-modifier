@@ -69,7 +69,7 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
       const workspaceFolders = (vscode.workspace.workspaceFolders) ? vscode.workspace.workspaceFolders : [];
         
       let availableProfilesMap:{ [key: string]: any } = {};
-      console.log('WORKSPACE FOLDERS: ', workspaceFolders);
+      
       if (workspaceFolders.length > 0) {
         for (const workspaceFolder of workspaceFolders) {
           let relativePattern: vscode.RelativePattern = new vscode.RelativePattern(workspaceFolder.uri.path, '**/*.profile-meta.xml');
@@ -99,7 +99,7 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
                     [folder]: [ ...availableProfilesMap[folder], profileName ]
                   };
                 });
-                console.log('AVAIL PROFS: ', availableProfilesMap);
+                
                 panel.webview.postMessage({
                     command: "profiles",
                     data: availableProfilesMap,
