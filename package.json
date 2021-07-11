@@ -3,6 +3,7 @@
 	"displayName": "Salesforce profile modifier",
 	"description": "Add, edit, or remove apex classes, visualforce pages, objects, and fields from profiles",
 	"version": "0.0.1",
+	"publisher": "SeanRussell",
 	"engines": {
 		"vscode": "^1.56.0"
 	},
