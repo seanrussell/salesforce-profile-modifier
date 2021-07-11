@@ -40,5 +40,3 @@ This vscode extension works only once you have installed Salesforce CLI and a pr
 ### For more information and contribution to project visit the below repositories and use issues tab to log any feedback or issues.
 
 * [Profile Modifier Plugin](https://github.com/seanrussell/profile-modifier-plugin)
-
-**Enjoy!**
