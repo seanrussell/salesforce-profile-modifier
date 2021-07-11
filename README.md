@@ -2,27 +2,19 @@
 
 [![Logo](./images/logo.png)](https://marketplace.visualstudio.com/items?itemName=MohithShrivastava.dx-code-companion)
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/MohithShrivastava.dx-code-companion.png)](https://marketplace.visualstudio.com/items?itemName=MohithShrivastava.dx-code-companion)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs/MohithShrivastava.dx-code-companion.png)](https://marketplace.visualstudio.com/items?itemName=MohithShrivastava.dx-code-companion)
-[![Downloads](https://vsmarketplacebadge.apphb.com/downloads/MohithShrivastava.dx-code-companion.png)](https://marketplace.visualstudio.com/items?itemName=MohithShrivastava.dx-code-companion)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating/MohithShrivastava.dx-code-companion.png)](https://vsmarketplacebadge.apphb.com/rating/MohithShrivastava.dx-code-companion.svg)
-
-
 **Note that this is not official from Salesforce. I created this extension to help my own development workflow for more easily modifying salesforce profile metadata files. **
 
-Provides ability to save Apex Classes,Apex Triggers, Visualforce, AuraBundles, Lightning Web Component Bundles(under preview) and ApexComponents to Salesforce Org at blazing speed without source tracking. Also enables retrieving code from the salesforce unmanaged package/changesets in both DX and NonDX source formats .You can also switch between authenticated orgs easily with CCDX: Switch Command. This extension requires users to have SalesforceDX CLI and also mo-dx-plugin(run **sfdx plugins:install mo-dx-plugin**) for SalesforceDX CLI.This Extension works with both scratch orgs and Non-scratch orgs.
-
-It is highly recommended to use with Salesforce Extension Pack to get all the other good things salesforce official extension offers (https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode) .
+Provides ability to save Apex Classes,Apex Triggers, Visualforce, AuraBundles, Lightning Web Component Bundles(under preview) and ApexComponents to Salesforce Org at blazing speed without source tracking. Also enables retrieving code from the salesforce unmanaged package/changesets in both DX and NonDX source formats .You can also switch between authenticated orgs easily with CCDX: Switch Command. This extension requires users to have SalesforceDX CLI and also profile-modifier-plugin(run **sfdx plugins:install profile-modifier-plugin**) for SalesforceDX CLI.This Extension works with both scratch orgs and Non-scratch orgs.
 
 # Requirements
 
-This vscode extension works only once you have installed Salesforce CLI and a mo-dx-plugin(run **sfdx plugins:install mo-dx-plugin** on your terminal) that has api for all the commands this extension leverages .
+This vscode extension works only once you have installed Salesforce CLI and a profile-modifier-plugin(run **sfdx plugins:install profile-modifier-plugin** on your terminal) that has api for all the commands this extension leverages .
 
 1. Install SalesforceDX CLI from https://developer.salesforce.com/tools/sfdxcli based on your operating system.
-2. Install mo-dx-plugin using the command `sfdx plugins:install mo-dx-plugin`.Note if you have already then make sure to update to latest always using `sfdx plugins:update`
+2. Install profile-modifier-plugin using the command `sfdx plugins:install profile-modifier-plugin`.Note if you have already then make sure to update to latest always using `sfdx plugins:update`
 3. VScode version 1.30 and beyond
 4. Salesforce official plugin provides great syntax and language support.Highly recommend to install (https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode)
-5. You have project workspace set up and have sfdx-project.json file in the root folder and you have ran sfdx force:auth:web:login for project folder and authorized your org with Salesforce CLI. 
+5. You have project workspace set up and have sfdx-project.json file in the root folder. 
 6. Extension activation is shown in footer with a rocket symbol. Once extension is active authorize the project if you havent and enjoy faster deploys
 
 # Features
