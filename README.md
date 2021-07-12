@@ -31,6 +31,9 @@ This vscode extension works only once you have installed Salesforce CLI and a pr
     ![Logo](https://github.com/seanrussell/salesforce-profile-modifier/blob/master/images/addfield.png)
 
 # Release Notes
+
+### 0.0.2
+1. Update image urls on README.md.
 ### 0.0.1
 
 1. Intial release of extension. Provides the ability to add, edit, and remove Apex class, Visualforce page, Object, and Field metadata from profiles
