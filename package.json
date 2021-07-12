@@ -2,7 +2,7 @@
 	"name": "salesforce-profile-modifier",
 	"displayName": "Salesforce profile modifier",
 	"description": "Add, edit, or remove apex classes, visualforce pages, objects, and fields from profiles",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "SeanRussell",
 	"engines": {
 		"vscode": "^1.56.0"
@@ -22,7 +22,7 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/seanrussell/salesforce-profile-modifier.git"
-	  },
+	},
 	"categories": [
 		"Other"
 	],
