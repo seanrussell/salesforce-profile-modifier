@@ -33,10 +33,10 @@ This vscode extension works only once you have installed Salesforce CLI and a pr
 # Release Notes
 ### 0.0.1
 
-1. Provides the ability to add, edit, and remove Apex class, Visualforce page, Object, and Field metadata from profiles
+1. Intial release of extension. Provides the ability to add, edit, and remove Apex class, Visualforce page, Object, and Field metadata from profiles
 
 -----------------------------------------------------------------------------------------------------------
 
-### For more information and contribution to project visit the below repositories and use issues tab to log any feedback or issues.
+### For more information on the SFDX CLI plugin that this extension wraps, please see:
 
 * [Profile Modifier Plugin](https://github.com/seanrussell/profile-modifier-plugin)
