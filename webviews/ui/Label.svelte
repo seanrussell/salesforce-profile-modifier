@@ -11,6 +11,7 @@
       width: 100%;
     }
     label {
+      font-weight: bold;
       font-size: calc(var(--vscode-font-size) * 0.9);
     }
 </style>

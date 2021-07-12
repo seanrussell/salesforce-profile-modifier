@@ -43,14 +43,11 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
               }
 
               const cmd = data.data;
-              console.log('SFDX CMD --> ', cmd);  
-
-              vscode.window.showInformationMessage(JSON.stringify(cmd));
               
               let activeTerminal = VSCodeCore.setupTerminal();
               if(activeTerminal){
                   activeTerminal.sendText(cmd);
-                  vscode.window.showInformationMessage('Profiles modified.');
+                  vscode.window.showInformationMessage('Command issued to modify profiles. View the console for status.');
                   this._view?.webview.postMessage({
                     command: 'modify-complete',
                     data: {},

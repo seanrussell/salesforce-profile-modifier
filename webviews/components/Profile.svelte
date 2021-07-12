@@ -15,7 +15,7 @@
     let metadataName: string = '';
     let metadataRename: string = '';
     
-    let enabledValue: string[] = [];
+    let enabledValue: string[] = ['enabled'];
     let includeFieldsValue: string[] = [];
     let alphabetizeValue: string[] = [];
     let permissionValue: string[] = [];
@@ -240,6 +240,23 @@
     }
 
     const modifyProfiles = () => {
+        let profileSelected = false;
+
+        for (const key in selectedProfiles) {
+            const profs = selectedProfiles[key];
+            if (profs.length > 0) {
+                profileSelected = true;
+            }
+        }
+
+        if (!profileSelected) {
+            tsvscode.postMessage({
+                command: 'onError',
+                data: 'Please select at least one profile to modify.'
+            });
+            return;
+        }
+
         if (!metadataName || metadataName.trim() === '') {
             tsvscode.postMessage({
                 command: 'onError',
@@ -306,12 +323,12 @@
                 command += profilePaths.join(",");
             }
         }
-
-        if (alphabetizeValue) {
+        
+        if (alphabetizeValue.length > 0) {
             command += ' -a';
         }
-
-        if (includeFieldsValue) {
+        
+        if (includeFieldsValue.length > 0) {
             command += ' -f';
         }
 
@@ -377,6 +394,11 @@
         display: block;
         width: 100%;
     }
+
+    span.permissions,
+    span.modify {
+        font-weight: bold;
+    }
 </style>
 
 <main>
@@ -439,13 +461,13 @@
                 <div>
                     <Checkbox
                         bind:value={includeFieldsValue}
-                        options={[{ label: 'Add object fields too?', value: 'enabled', show: true }]}
+                        options={[{ label: 'Add object fields too?', value: 'includeFields', show: true }]}
                     />
                 </div>
             {/if}
             {#if data.showPermissions}
                 <div>
-                    <span>Permissions</span>
+                    <span class="permissions">Permissions</span>
                     <Checkbox
                         bind:value={permissionValue}
                         options={perms}
@@ -453,7 +475,7 @@
                 </div>
             {/if}
             <div>
-                <span>Profiles to modify</span>
+                <span class="modify">Profiles to modify</span>
                 <div>
                     {#each [...folders] as [key, value]}
                         <Select

@@ -13,20 +13,22 @@ This vscode extension works only once you have installed Salesforce CLI and a pr
 1. Install SalesforceDX CLI from https://developer.salesforce.com/tools/sfdxcli based on your operating system.
 2. Install profile-modifier-plugin using the command `sfdx plugins:install profile-modifier-plugin`.Note if you have already then make sure to update to latest always using `sfdx plugins:update`
 3. VScode version 1.30 and beyond
-4. Salesforce official plugin provides great syntax and language support.Highly recommend to install (https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode)
-5. You have project workspace set up and have sfdx-project.json file in the root folder. 
-6. Extension activation is shown in footer with a rocket symbol. Once extension is active authorize the project if you havent and enjoy faster deploys
+4. You have project workspace set up and have sfdx-project.json file in the root folder. 
+5. Extension activation is shown in footer with a rocket symbol. Once extension is active authorize the project if you havent and enjoy faster deploys
 
 # Features
 
 1. **Add, edit, or remove Apex class metadata from profiles**
+    ![Logo](./images/addclass.png)
 
 2. **Add, edit, or remove Visualforce Page metadata from profiles**
+    ![Logo](./images/addpage.png)
 
 3. **Add, edit, or remove Object metadata from profiles**
+    ![Logo](./images/addobject.png)
 
 4. **Add, edit, or remove Field metadata from profiles**
-    
+    ![Logo](./images/addfield.png)
 
 # Release Notes
 ### 0.0.1
