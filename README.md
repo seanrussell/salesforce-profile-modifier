@@ -37,6 +37,6 @@ This vscode extension works only once you have installed Salesforce CLI and a pr
 
 -----------------------------------------------------------------------------------------------------------
 
-### For more information on the SFDX CLI plugin that this extension wraps, please see:
+### For more information on the SFDX CLI plugin that this extension makes use of, please see:
 
 * [Profile Modifier Plugin](https://github.com/seanrussell/profile-modifier-plugin)
