@@ -1,6 +1,6 @@
 # Salesforce Profile Modifier Extension 
 
-[![Logo](https://github.com/seanrussell/salesforce-profile-modifier/blob/master/images/logo.png)](https://marketplace.visualstudio.com/items?itemName=SeanRussell.salesforce-profile-modifier)
+[![Logo](./images/logo.png)](https://marketplace.visualstudio.com/items?itemName=SeanRussell.salesforce-profile-modifier)
 
 **Note that this plugin is not officially supported by Salesforce. I created this extension to ease the repetitiveness of having to add metadata to profiles.**
 
@@ -19,21 +19,18 @@ This vscode extension works only once you have installed Salesforce CLI and a pr
 # Features
 
 1. **Add, edit, or remove Apex class metadata from profiles**
-    ![Logo](https://github.com/seanrussell/salesforce-profile-modifier/blob/master/images/addclass.png)
+    ![Add Apex Class](./images/addclass.png)
 
 2. **Add, edit, or remove Visualforce Page metadata from profiles**
-    ![Logo](https://github.com/seanrussell/salesforce-profile-modifier/blob/master/images/addpage.png)
+    ![Add Visualforce Page](./images/addpage.png)
 
 3. **Add, edit, or remove Object metadata from profiles**
-    ![Logo](https://github.com/seanrussell/salesforce-profile-modifier/blob/master/images/addobject.png)
+    ![Add Object](./images/addobject.png)
 
 4. **Add, edit, or remove Field metadata from profiles**
-    ![Logo](https://github.com/seanrussell/salesforce-profile-modifier/blob/master/images/addfield.png)
+    ![Add Field](./images/addfield.png)
 
 # Release Notes
-
-### 0.0.2
-1. Update image urls on README.md.
 ### 0.0.1
 
 1. Intial release of extension. Provides the ability to add, edit, and remove Apex class, Visualforce page, Object, and Field metadata from profiles
