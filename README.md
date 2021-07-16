@@ -19,7 +19,7 @@ This vscode extension works only once you have installed Salesforce CLI and a pr
 # Features
 
 1. **Add, edit, or remove Apex class metadata from profiles**
-    ![Add Apex Class](./images/addclass.png)
+    ![Add Apex Class](./images/addrecording.gif)
 
 2. **Add, edit, or remove Visualforce Page metadata from profiles**
     ![Add Visualforce Page](./images/addpage.png)

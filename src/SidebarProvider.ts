@@ -96,7 +96,7 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
                     [folder]: [ ...availableProfilesMap[folder], profileName ]
                   };
                 });
-                
+
                 panel.webview.postMessage({
                     command: "profiles",
                     data: availableProfilesMap,

@@ -351,6 +351,12 @@
             case 'profiles':
                 let folderData = Object();
                 for (const key in message.data) {
+                    let profs = [...message.data[key]];
+
+                    profs.sort((a, b) => (a > b ? 1 : -1));
+
+                    message.data[key] = profs;
+
                     const options = message.data[key].map((f: string) => {
                         return {
                             label: f,
