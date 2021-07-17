@@ -97,6 +97,13 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
                   };
                 });
 
+                let startObj:{ [key: string]: any } = {};
+                
+                availableProfilesMap = Object.keys(availableProfilesMap).sort().reduce((obj, k) => {
+                  obj[k] = availableProfilesMap[k];
+                  return obj;
+                }, startObj);
+
                 panel.webview.postMessage({
                     command: "profiles",
                     data: availableProfilesMap,

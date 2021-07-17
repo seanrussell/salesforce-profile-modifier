@@ -6,6 +6,8 @@
 
 Provides ability to add, edit, and remove Apex Class, Visualforce Page, Object, and Field metadata from salesforce profiles within an SFDX project structure. This extension requires users to have SalesforceDX CLI and also profile-modifier-plugin (run **sfdx plugins:install profile-modifier-plugin**) for SalesforceDX CLI.
 
+![Demo](./images/demo.gif)
+
 # Prerequisites
 
 This vscode extension works only once you have installed Salesforce CLI and a profile-modifier-plugin (run **sfdx plugins:install profile-modifier-plugin** on your terminal) that has api for all the commands this extension leverages.
@@ -18,17 +20,11 @@ This vscode extension works only once you have installed Salesforce CLI and a pr
 
 # Features
 
-1. **Add, edit, or remove Apex class metadata from profiles**
-    ![Add Apex Class](./images/addrecording.gif)
-
-2. **Add, edit, or remove Visualforce Page metadata from profiles**
-    ![Add Visualforce Page](./images/addpage.png)
-
-3. **Add, edit, or remove Object metadata from profiles**
-    ![Add Object](./images/addobject.png)
-
-4. **Add, edit, or remove Field metadata from profiles**
-    ![Add Field](./images/addfield.png)
+ **Add, edit, or remove Apex class metadata from profiles**
+ **Add, edit, or remove Visualforce Page metadata from profiles**
+ **Add, edit, or remove Object metadata from profiles**
+ **Add, edit, or remove Field metadata from profiles**
+    
 
 # Release Notes
 ### 0.0.1
