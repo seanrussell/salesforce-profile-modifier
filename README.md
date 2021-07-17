@@ -14,7 +14,7 @@ This vscode extension works only once you have installed Salesforce CLI and a pr
 
 1. Install SalesforceDX CLI from https://developer.salesforce.com/tools/sfdxcli based on your operating system.
 2. Install profile-modifier-plugin using the command `sfdx plugins:install profile-modifier-plugin`. Note that if you have already installed the plugin, then make sure to update to latest always using `sfdx plugins:update`
-3. VScode version 1.30 and beyond
+3. VScode version 1.56 and beyond
 4. You have project workspace set up and have sfdx-project.json file in the root folder. 
 5. Extension is shown in the right hand menu with the icon ![Logo](https://github.com/seanrussell/salesforce-profile-modifier/blob/master/images/preview.png)
 
