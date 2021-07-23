@@ -27,31 +27,31 @@ This vscode extension works only once you have installed Salesforce CLI and a pr
 
 # UI Panel fields
 
-* Action to take
+* _Action to take_
     * This is a dropdown from which you select the action you want to perform: Add, Edit, or Delete metadata.
 
-* Metadata to modify
+* _Metadata to modify_
     * This is a dropdown from which you select the type of metadata you want to add, edit or remove. Current available options are: Apex Class, Visualforce Page, Object, and Field.
 
-* Metadata name
+* _Metadata name_
     * This is a text input where you enter the name of the metadata that is to be added, edited, or removed.
 
-* Rename to
+* _Rename to_
     * This is a text input where you enter the name of the metadata that you want the value in Metadata name (above) to be renamed to. This text input is only available when the Action to take (above) is Edit.
 
-* Add object fields too?
+* _Add object fields too?_
     * This is a checkbox that indicates that you want to add all the fields of an object to the profile in addition to the object. By default, the extension will look in the package locations specified in the project sfdx-project.json file when looking for fields within an object to add. If checked, the fields that will be added will have readable and editable enabled. In addition, required fields and master detail fields will not be added.
 
-* Permissions
+* _Permissions_
     * This contains a list of checkboxes corresponding to the permissions available for objects and fields. Object metadata provides the ability to specify whether the object is readable, editable, creatable, deletable and whether you can view all records and modify all records. For fields, the available options are readable and editable.
 
-* Enabled
+* _Enabled_
     * This is a checkbox that indicates whether an Apex Class or Visualforce Page should be enabled. This is only available when the Metadata to modify is either Apex Class or Visualforce Page.
 
-* Profile to modify
+* _Profile to modify_
     * This refers to a list of multi-select boxes from which to select the names of the Salesforce profiles that are to be modified based on the values of the other options on the UI panel. The extension looks at the packages specified in sfdx-project.json in determining which profile folders and files display in the UI panel.
 
-* Alphabetize
+* _Alphabetize_
     * This is a checkbox that indicates whether or not the profile file xml elements should be alphabetized after the profile is modified. 
 
 # Release Notes
