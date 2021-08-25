@@ -1,4 +1,4 @@
-# Salesforce Profile Modifier Extension 
+# Salesforce Profile Modifier Extension
 
 [![Logo](./images/logo.png)](https://marketplace.visualstudio.com/items?itemName=SeanRussell.salesforce-profile-modifier)
 
@@ -15,52 +15,65 @@ This vscode extension works only once you have installed Salesforce CLI and a pr
 1. Install SalesforceDX CLI from https://developer.salesforce.com/tools/sfdxcli based on your operating system.
 2. Install profile-modifier-plugin using the command `sfdx plugins:install profile-modifier-plugin`. Note that if you have already installed the plugin, then make sure to update to latest always using `sfdx plugins:update`
 3. VScode version 1.56 and beyond
-4. You have project workspace set up and have sfdx-project.json file in the root folder. 
+4. You have project workspace set up and have sfdx-project.json file in the root folder.
 5. Extension is shown in the right hand menu with the icon ![Logo](https://github.com/seanrussell/salesforce-profile-modifier/blob/master/images/preview.png)
 
 # Features
 
- 1. **Add, edit, or remove Apex class metadata from profiles**
- 2. **Add, edit, or remove Visualforce Page metadata from profiles**
- 3. **Add, edit, or remove Object metadata from profiles**
- 4. **Add, edit, or remove Field metadata from profiles**
+1.  **Add, edit, or remove Apex class metadata from profiles**
+2.  **Add, edit, or remove Visualforce Page metadata from profiles**
+3.  **Add, edit, or remove Object metadata from profiles**
+4.  **Add, edit, or remove Field metadata from profiles**
 
 # UI Panel fields
 
-* _Action to take_
-    * This is a dropdown from which you select the action you want to perform: Add, Edit, or Delete metadata.
+- _Action to take_
 
-* _Metadata to modify_
-    * This is a dropdown from which you select the type of metadata you want to add, edit or remove. Current available options are: Apex Class, Visualforce Page, Object, and Field.
+  - This is a dropdown from which you select the action you want to perform: Add, Edit, or Delete metadata.
 
-* _Metadata name_
-    * This is a text input where you enter the name of the metadata that is to be added, edited, or removed.
+- _Metadata to modify_
 
-* _Rename to_
-    * This is a text input where you enter the name of the metadata that you want the value in Metadata name (above) to be renamed to. This text input is only available when the Action to take (above) is Edit.
+  - This is a dropdown from which you select the type of metadata you want to add, edit or remove. Current available options are: Apex Class, Visualforce Page, Object, and Field.
 
-* _Add object fields too?_
-    * This is a checkbox that indicates that you want to add all the fields of an object to the profile in addition to the object. By default, the extension will look in the package locations specified in the project sfdx-project.json file when looking for fields within an object to add. If checked, the fields that will be added will have readable and editable enabled. In addition, required fields and master detail fields will not be added.
+- _Metadata name_
 
-* _Permissions_
-    * This contains a list of checkboxes corresponding to the permissions available for objects and fields. Object metadata provides the ability to specify whether the object is readable, editable, creatable, deletable and whether you can view all records and modify all records. For fields, the available options are readable and editable.
+  - This is a text input where you enter the name of the metadata that is to be added, edited, or removed.
 
-* _Enabled_
-    * This is a checkbox that indicates whether an Apex Class or Visualforce Page should be enabled. This is only available when the Metadata to modify is either Apex Class or Visualforce Page.
+- _Rename to_
 
-* _Profile to modify_
-    * This refers to a list of multi-select boxes from which to select the names of the Salesforce profiles that are to be modified based on the values of the other options on the UI panel. The extension looks at the packages specified in sfdx-project.json in determining which profile folders and files display in the UI panel.
+  - This is a text input where you enter the name of the metadata that you want the value in Metadata name (above) to be renamed to. This text input is only available when the Action to take (above) is Edit.
 
-* _Alphabetize_
-    * This is a checkbox that indicates whether or not the profile file xml elements should be alphabetized after the profile is modified. 
+- _Add object fields too?_
+
+  - This is a checkbox that indicates that you want to add all the fields of an object to the profile in addition to the object. By default, the extension will look in the package locations specified in the project sfdx-project.json file when looking for fields within an object to add. If checked, the fields that will be added will have readable and editable enabled. In addition, required fields and master detail fields will not be added.
+
+- _Permissions_
+
+  - This contains a list of checkboxes corresponding to the permissions available for objects and fields. Object metadata provides the ability to specify whether the object is readable, editable, creatable, deletable and whether you can view all records and modify all records. For fields, the available options are readable and editable.
+
+- _Enabled_
+
+  - This is a checkbox that indicates whether an Apex Class or Visualforce Page should be enabled. This is only available when the Metadata to modify is either Apex Class or Visualforce Page.
+
+- _Profile to modify_
+
+  - This refers to a list of multi-select boxes from which to select the names of the Salesforce profiles that are to be modified based on the values of the other options on the UI panel. The extension looks at the packages specified in sfdx-project.json in determining which profile folders and files display in the UI panel.
+
+- _Alphabetize_
+  - This is a checkbox that indicates whether or not the profile file xml elements should be alphabetized after the profile is modified.
 
 # Release Notes
+
+### 0.0.2
+
+1. Fixes an issue when editing objects and fields and leaving the permissions unchecked was not setting the permissions to false in metadata file.
+
 ### 0.0.1
 
 1. Intial release of extension. Provides the ability to add, edit, and remove Apex class, Visualforce page, Object, and Field metadata from profiles
 
------------------------------------------------------------------------------------------------------------
+---
 
 ### For more information on the SFDX CLI plugin that this extension makes use of, please see:
 
-* [Profile Modifier Plugin](https://github.com/seanrussell/profile-modifier-plugin)
+- [Profile Modifier Plugin](https://github.com/seanrussell/profile-modifier-plugin)

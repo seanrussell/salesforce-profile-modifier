@@ -281,9 +281,11 @@
             }
             
             if (currentMetadata === 'field' || currentMetadata === 'object') {
-                if (permissionValue.includes('r') || permissionValue.includes('e')) {
-                    command += ' -m ';
-                } 
+                command += ' -m ';
+
+                if (currentMetadata === 'field' && !permissionValue.includes('r') && !permissionValue.includes('e')) {
+                    command += 'no';
+                }
                 
                 if (permissionValue.includes('r')) {
                     command += 'r';
@@ -294,6 +296,10 @@
             }
 
             if (currentMetadata === 'object') {
+                if (!permissionValue.includes('r') && !permissionValue.includes('e') && !permissionValue.includes('c') && !permissionValue.includes('d') && !permissionValue.includes('v') && !permissionValue.includes('m')) {
+                    command += 'no';
+                }
+
                 if (permissionValue.includes('c')) {
                     command += 'c';
                 }
